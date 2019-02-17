@@ -1,0 +1,12 @@
+amxa-tunnel-service (1.0-1.1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * initial
+
+ -- Basil Stotz <stotz.basil@builder4>  Sun, 17 Feb 2019 22:09:51 +0100
+
+amxa-tunnel-service (1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Basil Stotz <stotz@amxa.ch>  Sun, 17 Feb 2019 22:04:35 +0100
