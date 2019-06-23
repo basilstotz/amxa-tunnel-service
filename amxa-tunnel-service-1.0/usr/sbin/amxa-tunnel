@@ -1,6 +1,6 @@
 #!/bin/sh
 
-OPTS=" -o BatchMode=yes -o StrictHostKeyChecking=no -o ServerAliveInterval=30  -o ServerAliveCountMax=3 -o ExitOnForwardFailure=yes "
+OPTS=" -o BatchMode=yes -o StrictHostKeyChecking=no -o ServerAliveInterval=30  -o ServerAliveCountMax=3 -o TCPKeepAlive=no -o ExitOnForwardFailure=yes "
 KEY="/images/amxa/amxa-tunnel.key"
 CONFIG="/images/amxa/amxa-tunnel.config"
 
