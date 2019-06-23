@@ -1,9 +1,10 @@
-amxa-tunnel-service (1.0-1.1) UNRELEASED; urgency=medium
+amxa-tunnel-service (1.0-2) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * initial
+  * fix autossh params: -M0 etc.... 
 
- -- Basil Stotz <stotz.basil@builder4>  Sun, 17 Feb 2019 22:09:51 +0100
+ -- Basil Stotz <stotz.basil@builder4>  Sun, 23 Jun 2019 10:34:12 +0200
 
 amxa-tunnel-service (1.0-1) unstable; urgency=medium
 
