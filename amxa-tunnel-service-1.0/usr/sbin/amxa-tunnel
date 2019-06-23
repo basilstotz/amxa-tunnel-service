@@ -1,6 +1,6 @@
 #!/bin/sh
 
-OPTS=" -o BatchMode=yes -o StrictHostKeyChecking=no "
+OPTS=" -o BatchMode=yes -o StrictHostKeyChecking=no -o ServerAliveInterval=30  ServerAliveCountMax=3 "
 KEY="/images/amxa/amxa-tunnel.key"
 CONFIG="/images/amxa/amxa-tunnel.config"
 
@@ -29,7 +29,7 @@ if test -e ${KEY} -a -e ${CONFIG}; then
     . ${CONFIG}
     while true; do
 	if ping -c 1  ${HOST} 2>/dev/null >/dev/null; then
-            /usr/bin/autossh -N -p ${PORT} -i ${KEY} ${OPTS} -R ${REMOTE}:localhost:22 ${USER}@${HOST}
+            /usr/bin/autossh -M 0 -N -p ${PORT} -i ${KEY} ${OPTS} -R ${REMOTE}:localhost:22 ${USER}@${HOST}
         fi
 	sleep 300
     done
