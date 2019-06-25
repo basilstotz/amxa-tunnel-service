@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Tue, 25 Jun 2019 10:48:08 +0200
+Source: amxa-tunnel-service
+Binary: amxa-tunnel-service
+Architecture: source all
+Version: 1.0-6
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Basil Stotz <stotz@amxa.ch>
+Changed-By: Basil Stotz <stotz.basil@builder4>
+Description:
+ amxa-tunnel-service - <insert up to 60 chars description>
+Changes:
+ amxa-tunnel-service (1.0-6) UNRELEASED; urgency=medium
+ .
+   * Non-maintainer upload.
+   * initial
+   * fix autossh params: -M0 etc....
+   * fix typo
+   * add TCPKeepAlive=no
+   * removed this
+   * again
+Checksums-Sha1:
+ 67a5fe404dcd308dab40d4be2f64ae17c2b75006 609 amxa-tunnel-service_1.0-6.dsc
+ 01500a8dc83d77a2b0d627bdf46b49ccf4a2ff48 2487 amxa-tunnel-service_1.0-6.tar.gz
+ 4f63391155f28b264b731748027e82de00fbfebc 2662 amxa-tunnel-service_1.0-6_all.deb
+ 20278f2ab08f8d75d6a5d7a132b0436bb0332fec 5226 amxa-tunnel-service_1.0-6_amd64.buildinfo
+Checksums-Sha256:
+ 2d2f285d4c415e34506b965e74ee6e2de8f269517cdcc3b31e7b5b3e9b7b77c6 609 amxa-tunnel-service_1.0-6.dsc
+ 1484d27f0b165c33757c28eb4021ca6de3f23c95b62be1e2273de07619360992 2487 amxa-tunnel-service_1.0-6.tar.gz
+ 1a28801e0312ce0b90799d240eba1991c8e04debd88ece5d8471b3ff19093809 2662 amxa-tunnel-service_1.0-6_all.deb
+ 9eaf6dd4a031b65e5fec1b1239876006e91075f505e0d1f74703aff313ecbcfc 5226 amxa-tunnel-service_1.0-6_amd64.buildinfo
+Files:
+ 3821dbf8d3ca967b86591ad70d70bf3c 609 unknown optional amxa-tunnel-service_1.0-6.dsc
+ bbdfb996ce10b38ed76393877db8f240 2487 unknown optional amxa-tunnel-service_1.0-6.tar.gz
+ b96320d627709c97a0f404e6933acff4 2662 unknown optional amxa-tunnel-service_1.0-6_all.deb
+ cd4c34421a54adedda3140a62dd67e91 5226 unknown optional amxa-tunnel-service_1.0-6_amd64.buildinfo
