@@ -26,6 +26,9 @@ fi
 
 
 if test -e ${KEY} -a -e ${CONFIG}; then
+
+#    systemctl start amxa-tunnel-watch.service
+    
     chmod 600 ${KEY}
     . ${CONFIG}
     while true; do

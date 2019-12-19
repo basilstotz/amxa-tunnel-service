@@ -1,0 +1,32 @@
+#!/bin/sh
+
+FILE="/var/log/amxa-tunnel-ping.epoch"
+KEY="/images/amxa/amxa-tunnel.key"
+CONFIG="/images/amxa/amxa-tunnel.config"
+
+if test -e ${KEY} -a -e ${CONFIG}; then
+
+   date +%s >$FILE
+   echo "Start $(date)" >/var/log/amxa-watchdog.log
+
+   while true; do
+      LAST="$(cat $FILE)"
+      NOW="$(date +%s)"
+      DIFF=$(( $NOW -$LAST ))
+      if test "$DIFF" -gt 21600; then
+
+        echo "Neustart $(date)" >/var/log/amxa-watchdog.log
+        systemctl stop amxa-tunnel
+        sleep 60	
+        systemctl start amxa-tunnel
+        date +%s >$FILE
+
+      fi
+     sleep 3600
+   done
+else
+    sleep 999999999
+fi
+
+
+exit

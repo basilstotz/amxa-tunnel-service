@@ -20,7 +20,8 @@ set -e
 
 case "$1" in
     configure)      
-      systemctl enable amxa-tunnel.service
+	systemctl enable amxa-tunnel.service
+	systemctl enable amxa-tunnel-watch.service
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

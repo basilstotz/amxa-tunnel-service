@@ -2,25 +2,25 @@ Format: 1.0
 Source: amxa-tunnel-service
 Binary: amxa-tunnel-service
 Architecture: all source
-Version: 1.0-6
+Version: 1.0-6.1
 Checksums-Md5:
- 3821dbf8d3ca967b86591ad70d70bf3c 609 amxa-tunnel-service_1.0-6.dsc
- b96320d627709c97a0f404e6933acff4 2662 amxa-tunnel-service_1.0-6_all.deb
+ eceeefb47a7eaabc997d8ca673def054 617 amxa-tunnel-service_1.0-6.1.dsc
+ bc5b73a7bfbe1da23d9f406b054e2942 2994 amxa-tunnel-service_1.0-6.1_all.deb
 Checksums-Sha1:
- 67a5fe404dcd308dab40d4be2f64ae17c2b75006 609 amxa-tunnel-service_1.0-6.dsc
- 4f63391155f28b264b731748027e82de00fbfebc 2662 amxa-tunnel-service_1.0-6_all.deb
+ 7ecb7ec2b74b8c840bc5f18ad5ecdb658edb41b8 617 amxa-tunnel-service_1.0-6.1.dsc
+ 7feac6a6970718f431355e183fc9d13cf9dce713 2994 amxa-tunnel-service_1.0-6.1_all.deb
 Checksums-Sha256:
- 2d2f285d4c415e34506b965e74ee6e2de8f269517cdcc3b31e7b5b3e9b7b77c6 609 amxa-tunnel-service_1.0-6.dsc
- 1a28801e0312ce0b90799d240eba1991c8e04debd88ece5d8471b3ff19093809 2662 amxa-tunnel-service_1.0-6_all.deb
+ 8ec27ae9159747a6f9a729c440f926f650b9e18947af1ccd20968036a61accb1 617 amxa-tunnel-service_1.0-6.1.dsc
+ f32b869c7fe960d4b9a5eb547f4a90040466a4cc1f8e84b853623245f4d45559 2994 amxa-tunnel-service_1.0-6.1_all.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Tue, 25 Jun 2019 10:48:22 +0200
+Build-Date: Thu, 19 Dec 2019 13:01:47 +0100
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
- autopoint (= 0.19.8.1-2),
+ autopoint (= 0.19.8.1-2+deb9u1),
  autotools-dev (= 20161112.1),
- base-files (= 9.9+deb9u9),
+ base-files (= 9.9+deb9u11),
  base-passwd (= 3.5.43),
  bash (= 4.4-5),
  binutils (= 2.28-5),
@@ -41,9 +41,9 @@ Installed-Build-Depends:
  diffutils (= 1:3.5-3),
  dpkg (= 1.18.25),
  dpkg-dev (= 1.18.25),
- e2fslibs (= 1.43.4-2),
- e2fsprogs (= 1.43.4-2),
- file (= 1:5.30-1+deb9u2),
+ e2fslibs (= 1.43.4-2+deb9u1),
+ e2fsprogs (= 1.43.4-2+deb9u1),
+ file (= 1:5.30-1+deb9u3),
  findutils (= 4.6.0+git+20161106-2),
  g++ (= 4:6.3.0-4),
  g++-6 (= 6.3.0-18+deb9u1),
@@ -53,8 +53,8 @@ Installed-Build-Depends:
  gcc-4.9-base (= 4.9.2-10+deb8u1),
  gcc-6 (= 6.3.0-18+deb9u1),
  gcc-6-base (= 6.3.0-18+deb9u1),
- gettext (= 0.19.8.1-2),
- gettext-base (= 0.19.8.1-2),
+ gettext (= 0.19.8.1-2+deb9u1),
+ gettext-base (= 0.19.8.1-2+deb9u1),
  grep (= 2.27-2),
  groff-base (= 1.22.3-9),
  gzip (= 1.6-5+b1),
@@ -81,7 +81,7 @@ Installed-Build-Depends:
  libcc1-0 (= 6.3.0-18+deb9u1),
  libcilkrts5 (= 6.3.0-18+deb9u1),
  libcloog-isl4 (= 0.18.4-1+b1),
- libcomerr2 (= 1.43.4-2),
+ libcomerr2 (= 1.43.4-2+deb9u1),
  libcroco3 (= 0.6.11-3),
  libdb5.3 (= 5.3.28-12+deb9u1),
  libdebconfclient0 (= 0.227),
@@ -94,19 +94,19 @@ Installed-Build-Depends:
  libgcc1 (= 1:6.3.0-18+deb9u1),
  libgcrypt20 (= 1.7.6-2+deb9u3),
  libgdbm3 (= 1.8.3-14),
- libglib2.0-0 (= 2.50.3-2),
+ libglib2.0-0 (= 2.50.3-2+deb9u1),
  libgmp10 (= 2:6.1.2+dfsg-1),
  libgomp1 (= 6.3.0-18+deb9u1),
  libgpg-error0 (= 1.26-2),
- libicu57 (= 57.1-6+deb9u2),
+ libicu57 (= 57.1-6+deb9u3),
  libisl10 (= 0.12.2-2),
  libisl15 (= 0.18-1),
  libitm1 (= 6.3.0-18+deb9u1),
  liblsan0 (= 6.3.0-18+deb9u1),
  liblz4-1 (= 0.0~r131-2+b1),
  liblzma5 (= 5.2.2-1.2+b1),
- libmagic-mgc (= 1:5.30-1+deb9u2),
- libmagic1 (= 1:5.30-1+deb9u2),
+ libmagic-mgc (= 1:5.30-1+deb9u3),
+ libmagic1 (= 1:5.30-1+deb9u3),
  libmount1 (= 2.29.2-1+deb9u1),
  libmpc3 (= 1.0.3-1+b2),
  libmpfr4 (= 3.1.5-1),
@@ -128,21 +128,21 @@ Installed-Build-Depends:
  libsepol1 (= 2.6-2),
  libsigsegv2 (= 2.10-5),
  libsmartcols1 (= 2.29.2-1+deb9u1),
- libss2 (= 1.43.4-2),
+ libss2 (= 1.43.4-2+deb9u1),
  libstdc++-6-dev (= 6.3.0-18+deb9u1),
  libstdc++6 (= 6.3.0-18+deb9u1),
- libsystemd0 (= 232-25+deb9u11),
+ libsystemd0 (= 232-25+deb9u12),
  libtimedate-perl (= 2.3000-2),
  libtinfo5 (= 6.0+20161126-1+deb9u2),
  libtool (= 2.4.6-2),
  libtsan0 (= 6.3.0-18+deb9u1),
  libubsan0 (= 6.3.0-18+deb9u1),
- libudev1 (= 232-25+deb9u11),
+ libudev1 (= 232-25+deb9u12),
  libunistring0 (= 0.9.6+really0.9.3-0.1),
  libustr-1.0-1 (= 1.0.4-6),
  libuuid1 (= 2.29.2-1+deb9u1),
  libxml2 (= 2.9.4+dfsg1-2.2+deb9u2),
- linux-libc-dev (= 4.9.168-1+puavo1+build1558082223),
+ linux-libc-dev (= 4.9.189-3+deb9u2+puavo1+build1574070441),
  login (= 1:4.4-4.1),
  m4 (= 1.4.18-1),
  make (= 4.1-9.1),
@@ -153,7 +153,7 @@ Installed-Build-Depends:
  ncurses-base (= 6.0+20161126-1+deb9u2),
  ncurses-bin (= 6.0+20161126-1+deb9u2),
  passwd (= 1:4.4-4.1),
- patch (= 2.7.5-1+deb9u1),
+ patch (= 2.7.5-1+deb9u2),
  perl (= 5.24.1-3+deb9u5),
  perl-base (= 5.24.1-3+deb9u5),
  perl-modules-5.24 (= 5.24.1-3+deb9u5),
@@ -170,4 +170,4 @@ Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="de_CH.UTF-8"
  MAKEFLAGS=""
- SOURCE_DATE_EPOCH="1561452488"
+ SOURCE_DATE_EPOCH="1576756849"

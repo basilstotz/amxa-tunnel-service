@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Thu, 19 Dec 2019 13:00:49 +0100
+Source: amxa-tunnel-service
+Binary: amxa-tunnel-service
+Architecture: source all
+Version: 1.0-6.1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Basil Stotz <stotz@amxa.ch>
+Changed-By: Basil Stotz <stotz.basil@builder3>
+Description:
+ amxa-tunnel-service - <insert up to 60 chars description>
+Changes:
+ amxa-tunnel-service (1.0-6.1) UNRELEASED; urgency=medium
+ .
+   * Non-maintainer upload.
+   * initial
+   * fix autossh params: -M0 etc....
+   * fix typo
+   * add TCPKeepAlive=no
+   * removed this
+   * again
+   * add amxa-tunnel-watch.service (need ext. server pinging every 4 h)
+Checksums-Sha1:
+ 7ecb7ec2b74b8c840bc5f18ad5ecdb658edb41b8 617 amxa-tunnel-service_1.0-6.1.dsc
+ 69fad4d1b2603cfa0142f9d575d64e05e587a4be 2775 amxa-tunnel-service_1.0-6.1.tar.gz
+ 7feac6a6970718f431355e183fc9d13cf9dce713 2994 amxa-tunnel-service_1.0-6.1_all.deb
+ 2515238ed86ddf72950dd8e8d5ae23030df34d4a 5304 amxa-tunnel-service_1.0-6.1_amd64.buildinfo
+Checksums-Sha256:
+ 8ec27ae9159747a6f9a729c440f926f650b9e18947af1ccd20968036a61accb1 617 amxa-tunnel-service_1.0-6.1.dsc
+ 8d2e52203ebfd6d7ff3227e0d1471fb12f4151e5f8cf1404667137f03e58d3bb 2775 amxa-tunnel-service_1.0-6.1.tar.gz
+ f32b869c7fe960d4b9a5eb547f4a90040466a4cc1f8e84b853623245f4d45559 2994 amxa-tunnel-service_1.0-6.1_all.deb
+ c903716bc6f119000ecca9ca93d0fc957444ae7c601bd70332f9b629038ab9bb 5304 amxa-tunnel-service_1.0-6.1_amd64.buildinfo
+Files:
+ eceeefb47a7eaabc997d8ca673def054 617 unknown optional amxa-tunnel-service_1.0-6.1.dsc
+ e21106e57313369914b74c25eb68ce6c 2775 unknown optional amxa-tunnel-service_1.0-6.1.tar.gz
+ bc5b73a7bfbe1da23d9f406b054e2942 2994 unknown optional amxa-tunnel-service_1.0-6.1_all.deb
+ a2c1df86ad8acd22d99f69ccea77e408 5304 unknown optional amxa-tunnel-service_1.0-6.1_amd64.buildinfo
