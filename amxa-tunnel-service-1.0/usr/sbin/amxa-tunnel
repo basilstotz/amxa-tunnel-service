@@ -14,6 +14,7 @@ REMOTE="5556"
 HOST="backup.amxa.ch"
 USER="tunnel"
 PORT="443"
+MAXAGE="21600"
 EOF
    fi
    exit 0

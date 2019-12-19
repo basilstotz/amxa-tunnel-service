@@ -1,11 +1,15 @@
 #!/bin/sh
 
-FILE="/var/log/amxa-tunnel-ping.epoch"
-KEY="/images/amxa/amxa-tunnel.key"
 CONFIG="/images/amxa/amxa-tunnel.config"
+FILE="/var/log/amxa-tunnel-ping.epoch"
+MAXAGE="21600"
 
-if test -e ${KEY} -a -e ${CONFIG}; then
+. ${CONFIG}
 
+
+if test -f ${KEY} -a -f ${CONFIG}; then
+    
+    
    date +%s >$FILE
    echo "Start $(date)" >/var/log/amxa-watchdog.log
 
@@ -13,14 +17,16 @@ if test -e ${KEY} -a -e ${CONFIG}; then
       LAST="$(cat $FILE)"
       NOW="$(date +%s)"
       DIFF=$(( $NOW -$LAST ))
-      if test "$DIFF" -gt 21600; then
+      if test "$DIFF" -gt $MAXAGE; then
 
-        echo "Neustart $(date)" >/var/log/amxa-watchdog.log
-        systemctl stop amxa-tunnel
-        sleep 60	
-        systemctl start amxa-tunnel
-        date +%s >$FILE
-
+	if ping -c 1  ${HOST} 2>/dev/null >/dev/null; then
+           echo "Neustart $(date)" >/var/log/amxa-watchdog.log
+           systemctl stop amxa-tunnel
+           sleep 60	
+           systemctl start amxa-tunnel
+           date +%s >$FILE
+        fi
+	
       fi
      sleep 3600
    done
