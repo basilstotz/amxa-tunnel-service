@@ -4,11 +4,9 @@ CONFIG="/images/amxa/amxa-tunnel.config"
 FILE="/var/log/amxa-tunnel-ping.epoch"
 MAXAGE="21600"
 
-. ${CONFIG}
-
-
 if test -f ${KEY} -a -f ${CONFIG}; then
-    
+
+   . ${CONFIG}
     
    date +%s >$FILE
    echo "Start $(date)" >/var/log/amxa-watchdog.log
