@@ -6,7 +6,7 @@ MAXAGE="21600"
 
 if test -f ${KEY} -a -f ${CONFIG}; then
 
-   . ${CONFIG}
+. ${CONFIG}
     
    date +%s >$FILE
    echo "Start $(date)" >/var/log/amxa-watchdog.log

@@ -1,0 +1,30 @@
+#!/bin/sh
+
+INTERVALL=12
+
+while true; do
+  if test "$(puavo-conf puavo.image.automatic_updates)" = "true"; then
+    PREFERRED="$(puavo-conf puavo.image.preferred).img"
+    ACTUAL="$(cat /etc/puavo-image/name)"
+    if ! test "$ACTUAL" = "$PREFERRED"; then
+       if test -e /images/$PREFERRED; then
+	   ENDE="$(date -d "tomorrow 2am" +%s)"
+           echo "info: reboot tomorrow at 2am"
+	   while test "$(date +%s)" -le $ENDE; do
+	       sleep $INTERVALL
+	   done
+	   echo reboot    
+       else
+	   echo "error: image $PREFERRED does not exist"
+       fi
+#    else
+#	echo "info: nothing to do"
+    fi
+#  else
+#      echo "info: no automatic updates"
+  fi
+  sleep $INTERVALL
+done
+
+
+	  

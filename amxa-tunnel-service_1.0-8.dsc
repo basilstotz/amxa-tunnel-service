@@ -2,7 +2,7 @@ Format: 1.0
 Source: amxa-tunnel-service
 Binary: amxa-tunnel-service
 Architecture: all
-Version: 1.0-7
+Version: 1.0-8
 Maintainer: Basil Stotz <stotz@amxa.ch>
 Homepage: <insert the upstream URL, if relevant>
 Standards-Version: 3.9.8
@@ -10,8 +10,8 @@ Build-Depends: debhelper (>= 9)
 Package-List:
  amxa-tunnel-service deb unknown optional arch=all
 Checksums-Sha1:
- 5a8a764840003aa0e36e84ba48f91dd7cdb3a7ec 2803 amxa-tunnel-service_1.0-7.tar.gz
+ ee0d6ffb7b8bd5af174a96c05ebb08e93520536f 2852 amxa-tunnel-service_1.0-8.tar.gz
 Checksums-Sha256:
- c758e9a373e67b96074e7153a7697aa0d7b18e06dd13fd14b779ce55bcfaf2df 2803 amxa-tunnel-service_1.0-7.tar.gz
+ f7cd97544bc47aa7f8352312094269b9268dbe49e8cb305f1e74dfcde8ac647a 2852 amxa-tunnel-service_1.0-8.tar.gz
 Files:
- 0d4d3651e8ec0328158f4ced7facf7ca 2803 amxa-tunnel-service_1.0-7.tar.gz
+ e1505577243dde3feba8d6860ae99c50 2852 amxa-tunnel-service_1.0-8.tar.gz
