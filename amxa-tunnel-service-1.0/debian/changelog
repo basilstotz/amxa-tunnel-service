@@ -1,4 +1,4 @@
-amxa-tunnel-service (1.0-9) UNRELEASED; urgency=medium
+amxa-tunnel-service (1.0-9.1) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * initial
@@ -11,8 +11,9 @@ amxa-tunnel-service (1.0-9) UNRELEASED; urgency=medium
   * add ping test
   * fix error
   * fix logging
+  * fix amxa-tunnel-watch
 
- -- Basil Stotz <stotz.basil@builder3>  Tue, 17 Mar 2020 11:33:07 +0100
+ -- Basil Stotz <stotz.basil@stretch-6mRRdxT0>  Tue, 17 Mar 2020 22:02:32 +0100
 
 amxa-tunnel-service (1.0-1) unstable; urgency=medium
 

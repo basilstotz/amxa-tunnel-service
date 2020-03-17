@@ -1,7 +1,9 @@
 #!/bin/sh
 
 CONFIG="/images/amxa/amxa-tunnel.config"
+KEY='/images/amxa/amxa-tunnel.key'
 FILE="/var/log/amxa-tunnel-ping.epoch"
+LOG='/var/log/amxa-watchdog.log'
 MAXAGE="21600"
 
 if test -f ${KEY} -a -f ${CONFIG}; then
@@ -9,7 +11,7 @@ if test -f ${KEY} -a -f ${CONFIG}; then
 . ${CONFIG}
     
    date +%s >$FILE
-   echo "Start $(date)" >>/var/log/amxa-watchdog.log
+   echo "Start $(date)" >>${LOG}
 
    while true; do
       LAST="$(cat $FILE)"
@@ -18,7 +20,7 @@ if test -f ${KEY} -a -f ${CONFIG}; then
       if test "$DIFF" -gt $MAXAGE; then
 
 	if ping -c 1  ${HOST} 2>/dev/null >/dev/null; then
-           echo "Neustart $(date)" >>/var/log/amxa-watchdog.log
+           echo "Neustart $(date)" >>${LOG}
            systemctl stop amxa-tunnel
            sleep 60	
            systemctl start amxa-tunnel
