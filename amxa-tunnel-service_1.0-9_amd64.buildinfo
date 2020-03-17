@@ -2,19 +2,19 @@ Format: 1.0
 Source: amxa-tunnel-service
 Binary: amxa-tunnel-service
 Architecture: all source
-Version: 1.0-8
+Version: 1.0-9
 Checksums-Md5:
- 1d215d389d386f7d5efc3fd6b9082064 609 amxa-tunnel-service_1.0-8.dsc
- 1a58537dc75228e2f57e3d197d8a737e 3016 amxa-tunnel-service_1.0-8_all.deb
+ baf35f730dc9c148d61a9d4d37379f78 609 amxa-tunnel-service_1.0-9.dsc
+ 3a3eec0928fdbfb18d579e16235c6050 3030 amxa-tunnel-service_1.0-9_all.deb
 Checksums-Sha1:
- 0f069b0aca64683e45f25739cbc4376efe915991 609 amxa-tunnel-service_1.0-8.dsc
- 5e8abc8ed3bba255e3e55c187cbd90e8a6a39a53 3016 amxa-tunnel-service_1.0-8_all.deb
+ a7ea08d432a72354923e2faeb9b1b231585c2e29 609 amxa-tunnel-service_1.0-9.dsc
+ a67724c4941c0285e89e3085d18970f06137f293 3030 amxa-tunnel-service_1.0-9_all.deb
 Checksums-Sha256:
- cd079b7398e007f0e9e3ce37f16b57e08bd52a47e858c04238d5cd0921a38cb0 609 amxa-tunnel-service_1.0-8.dsc
- e202e42e7f1379a112d1d464f75f0330a3052776c80bc131ea0cdf29ed5e30b9 3016 amxa-tunnel-service_1.0-8_all.deb
+ 084692fd958058346d4647f200e9541724f0313cd175a57096dedb3675d38586 609 amxa-tunnel-service_1.0-9.dsc
+ ff6b2f000700c7038d9136684fd45ab96d7fffce3459dfb695ec46c4a2cef0fe 3030 amxa-tunnel-service_1.0-9_all.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Tue, 17 Mar 2020 11:15:47 +0100
+Build-Date: Tue, 17 Mar 2020 11:33:18 +0100
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
@@ -170,4 +170,4 @@ Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="de_CH.UTF-8"
  MAKEFLAGS=""
- SOURCE_DATE_EPOCH="1584440128"
+ SOURCE_DATE_EPOCH="1584441187"

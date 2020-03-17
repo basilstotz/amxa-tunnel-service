@@ -9,7 +9,7 @@ if test -f ${KEY} -a -f ${CONFIG}; then
 . ${CONFIG}
     
    date +%s >$FILE
-   echo "Start $(date)" >/var/log/amxa-watchdog.log
+   echo "Start $(date)" >>/var/log/amxa-watchdog.log
 
    while true; do
       LAST="$(cat $FILE)"
@@ -18,7 +18,7 @@ if test -f ${KEY} -a -f ${CONFIG}; then
       if test "$DIFF" -gt $MAXAGE; then
 
 	if ping -c 1  ${HOST} 2>/dev/null >/dev/null; then
-           echo "Neustart $(date)" >/var/log/amxa-watchdog.log
+           echo "Neustart $(date)" >>/var/log/amxa-watchdog.log
            systemctl stop amxa-tunnel
            sleep 60	
            systemctl start amxa-tunnel
