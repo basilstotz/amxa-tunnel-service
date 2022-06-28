@@ -10,6 +10,6 @@ Homepage: <insert the upstream URL, if relevant>
 
 Package: amxa-tunnel-service
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, autossh
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
